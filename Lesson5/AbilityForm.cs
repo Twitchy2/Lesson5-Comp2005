@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Lesson5
 {
-    public partial class Form1 : Form
+    public partial class AbilityForm : Form
     {
-        public Form1()
+        public AbilityForm()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
