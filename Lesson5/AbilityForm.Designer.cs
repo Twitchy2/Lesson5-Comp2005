@@ -84,7 +84,7 @@
             // 
             this.ConstitutionTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ConstitutionTextBox.Enabled = false;
-            this.ConstitutionTextBox.Location = new System.Drawing.Point(167, 116);
+            this.ConstitutionTextBox.Location = new System.Drawing.Point(167, 97);
             this.ConstitutionTextBox.Name = "ConstitutionTextBox";
             this.ConstitutionTextBox.Size = new System.Drawing.Size(100, 22);
             this.ConstitutionTextBox.TabIndex = 5;
@@ -92,7 +92,7 @@
             // ConstitutionLabel
             // 
             this.ConstitutionLabel.AutoSize = true;
-            this.ConstitutionLabel.Location = new System.Drawing.Point(46, 119);
+            this.ConstitutionLabel.Location = new System.Drawing.Point(46, 100);
             this.ConstitutionLabel.Name = "ConstitutionLabel";
             this.ConstitutionLabel.Size = new System.Drawing.Size(115, 15);
             this.ConstitutionLabel.TabIndex = 4;
@@ -102,7 +102,7 @@
             // 
             this.IntelligenceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.IntelligenceTextBox.Enabled = false;
-            this.IntelligenceTextBox.Location = new System.Drawing.Point(167, 166);
+            this.IntelligenceTextBox.Location = new System.Drawing.Point(167, 147);
             this.IntelligenceTextBox.Name = "IntelligenceTextBox";
             this.IntelligenceTextBox.Size = new System.Drawing.Size(100, 22);
             this.IntelligenceTextBox.TabIndex = 7;
@@ -110,7 +110,7 @@
             // IntelligenceLabel
             // 
             this.IntelligenceLabel.AutoSize = true;
-            this.IntelligenceLabel.Location = new System.Drawing.Point(46, 168);
+            this.IntelligenceLabel.Location = new System.Drawing.Point(46, 149);
             this.IntelligenceLabel.Name = "IntelligenceLabel";
             this.IntelligenceLabel.Size = new System.Drawing.Size(115, 15);
             this.IntelligenceLabel.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             this.WisdomTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.WisdomTextBox.Enabled = false;
-            this.WisdomTextBox.Location = new System.Drawing.Point(113, 213);
+            this.WisdomTextBox.Location = new System.Drawing.Point(113, 194);
             this.WisdomTextBox.Name = "WisdomTextBox";
             this.WisdomTextBox.Size = new System.Drawing.Size(154, 22);
             this.WisdomTextBox.TabIndex = 9;
@@ -128,7 +128,7 @@
             // WisdomLabel
             // 
             this.WisdomLabel.AutoSize = true;
-            this.WisdomLabel.Location = new System.Drawing.Point(46, 216);
+            this.WisdomLabel.Location = new System.Drawing.Point(46, 197);
             this.WisdomLabel.Name = "WisdomLabel";
             this.WisdomLabel.Size = new System.Drawing.Size(61, 15);
             this.WisdomLabel.TabIndex = 8;
@@ -138,7 +138,7 @@
             // 
             this.CharismaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CharismaTextBox.Enabled = false;
-            this.CharismaTextBox.Location = new System.Drawing.Point(131, 253);
+            this.CharismaTextBox.Location = new System.Drawing.Point(131, 234);
             this.CharismaTextBox.Name = "CharismaTextBox";
             this.CharismaTextBox.Size = new System.Drawing.Size(136, 22);
             this.CharismaTextBox.TabIndex = 11;
@@ -146,7 +146,7 @@
             // CharismaLabel
             // 
             this.CharismaLabel.AutoSize = true;
-            this.CharismaLabel.Location = new System.Drawing.Point(46, 256);
+            this.CharismaLabel.Location = new System.Drawing.Point(46, 237);
             this.CharismaLabel.Name = "CharismaLabel";
             this.CharismaLabel.Size = new System.Drawing.Size(79, 15);
             this.CharismaLabel.TabIndex = 10;
@@ -154,12 +154,13 @@
             // 
             // RollButton
             // 
-            this.RollButton.Location = new System.Drawing.Point(71, 281);
+            this.RollButton.Location = new System.Drawing.Point(71, 272);
             this.RollButton.Name = "RollButton";
             this.RollButton.Size = new System.Drawing.Size(161, 36);
             this.RollButton.TabIndex = 12;
             this.RollButton.Text = "Roll Abilities";
             this.RollButton.UseVisualStyleBackColor = true;
+            this.RollButton.Click += new System.EventHandler(this.RollButton_Click);
             // 
             // AbilityForm
             // 
@@ -183,6 +184,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "AbilityForm";
             this.Text = "AbilityForm";
+            this.Load += new System.EventHandler(this.AbilityForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
