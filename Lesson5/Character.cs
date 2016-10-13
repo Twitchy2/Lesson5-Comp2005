@@ -42,5 +42,11 @@ namespace Lesson5
             get;
             set;
         }
+
+        public String Race
+        {
+            get;
+            set;
+        }
     }
 }
