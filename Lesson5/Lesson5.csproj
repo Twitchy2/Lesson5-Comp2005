@@ -53,10 +53,19 @@
       <DependentUpon>AbilityForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Character.cs" />
+    <Compile Include="NextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NextForm.Designer.cs">
+      <DependentUpon>NextForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AbilityForm.resx">
       <DependentUpon>AbilityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NextForm.resx">
+      <DependentUpon>NextForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

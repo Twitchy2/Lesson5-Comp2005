@@ -76,5 +76,18 @@ namespace Lesson5
         {
             RollAbilities();
         }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            //create an instance of next form
+            NextForm raceForm = new NextForm();
+
+
+            raceForm.previousForm = this;
+
+            raceForm.Show(); //show form
+
+            this.Hide();
+        }
     }
 }
